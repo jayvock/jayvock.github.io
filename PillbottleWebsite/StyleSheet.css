@@ -1,0 +1,42 @@
+﻿body {
+			background-color: transparent;
+			margin: 0px;
+}
+.button {
+            display: block;
+            color:#09ff00;
+            font-family:'Lucida Console';
+            background-color: transparent;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            outline: none;
+            border:none;
+            margin:0;
+            padding:2px;
+            cursor: pointer;
+            top: 10px;
+            bottom:500px;
+            text-align: left;
+            
+}
+.button:hover{
+    display: block;
+            color:#00d2ff;
+            font-family:'Lucida Console';
+            background-color: transparent;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            outline: none;
+            border:none;
+            margin:0;
+            padding:2px;
+            cursor: pointer;
+            top: 10px;
+            bottom:500px;
+            text-align: left;
+}
+.b {
+            position:absolute;
+            background-color: transparent;
+            background-repeat: no-repeat;
+}
