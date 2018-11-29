@@ -189,13 +189,14 @@
 		    video.pause();
 		    video.currentTime = 0;
 		    video.src = src;
+		    video.setAttribute('webkit-playsinline', '');
             video.loop = true;
 		    video.load(); // must call after setting/changing source
 		    video.play();
 		    videoImage = document.createElement('canvas');
 		    videoImage.width = width;
 		    videoImage.height = height;
-		    videoImage.setAttribute('webkit-playsinline', '');
+		    
 
 
 		    videoImageContext = videoImage.getContext('2d');
