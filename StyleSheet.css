@@ -35,8 +35,50 @@
             bottom:500px;
             text-align: left;
 }
+.button:active{
+    display: block;
+            color:#ffd800;
+            font-family:'Lucida Console';
+            background-color: transparent;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            outline: none;
+            border:none;
+            margin:0;
+            padding:2px;
+            cursor: pointer;
+            top: 10px;
+            bottom:500px;
+            text-align: left;
+}
+.button:target{
+       display: block;
+            color:#ff0000;
+            font-family:'Lucida Console';
+            background-color: transparent;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            outline: none;
+            border:none;
+            margin:0;
+            padding:2px;
+            cursor: pointer;
+            top: 10px;
+            bottom:500px;
+            text-align: left;
+}
 .b {
             position:absolute;
             background-color: transparent;
             background-repeat: no-repeat;
+}
+.target{
+  font-size:18px;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 1.5s ease;
+}
+.target:target{
+  opacity: 1;
+  transform: translateX(0);
 }
