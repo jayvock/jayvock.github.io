@@ -62,6 +62,7 @@
 		var container, controls;
 		var camera, scene, renderer, light;
 		var mixer;
+		var fbxSticker;
 		var fbxLabel;
 		var fbxBottle;
 		var fbxLoader = new THREE.FBXLoader();
@@ -148,6 +149,20 @@
 		        label.position.set(0, 550, 0);
 
 		        scene.add(label);
+
+		    });
+
+		    fbxLoader.load('SmileySticker.FBX', function (sticker) {
+
+		        fbxSticker = sticker;
+		        loadTexture('textures/smiley.png', fbxSticker)
+
+		        sticker.scale.set(0.1, 0.1, 0.1);
+		        sticker.rotation.x = -Math.PI / 2;
+		        sticker.rotation.z = 90;
+		        sticker.position.set(0, 550, 0);
+
+		        scene.add(sticker);
 
 		    });
 
