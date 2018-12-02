@@ -85,10 +85,10 @@
 		   document.body.appendChild(container);
 
 		    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 15000);
-		    camera.position.set(100, 800, 300);
+		    camera.position.set(250,775, 300);
 
 		    controls = new THREE.OrbitControls(camera);
-		    controls.target.set(0, 600, 0);
+		    controls.target.set(0, 650, 0);
 		    controls.update();
 
 		    scene = new THREE.Scene();
@@ -163,6 +163,19 @@
 		        sticker.position.set(0, 550, 0);
 
 		        scene.add(sticker);
+
+		    });
+		  
+		    fbxLoader.load('PillBottleBody.FBX', function (body) {
+
+		        fbxBody = body;
+
+		        body.scale.set(0.1, 0.1, 0.1);
+		        body.rotation.x = -Math.PI / 2;
+		        body.rotation.z = 90;
+		        body.position.set(0, 550, 0);
+                
+		        scene.add(body);
 
 		    });
 
